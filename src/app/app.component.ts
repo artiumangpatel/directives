@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'directives';
+  onlyOddNumber=true;
+  numbers=[1,2,3,4,5];
+  oddNumbers=[1,3,5];
+  evenNumbers=[2,4];
+  onlyOdd(){
+    this.onlyOddNumber=!this.onlyOddNumber;
+  }
 }
