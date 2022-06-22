@@ -10,6 +10,7 @@ export class BetterHighlightDirective implements OnInit{
   @HostBinding('style.backgroundColor') bgcolor:string=this.defaultColor;
   constructor(private elRef:ElementRef,private renderer:Renderer2) { }
  ngOnInit(): void {
+  // this.bgcolor=this.defaultColor;
   //  this.renderer.setStyle(this.elRef.nativeElement,'background-color','blue');
  }
  @HostListener('mouseenter') mouseover(eventData:Event){
